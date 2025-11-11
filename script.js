@@ -166,7 +166,7 @@ function showOutput() {
                     // Wait, then restart with next task
                     setTimeout(() => {
                         restartAnimation();
-                    }, 3000);
+                    }, 10000);
                 }, 500);
             } else if (line.includes('✓')) {
                 lineElement.style.color = 'var(--accent-green)';
