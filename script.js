@@ -10,7 +10,7 @@ const tasks = [
         linesGenerated: 94,
         schedule: "Daily at 9:00 AM (0 9 * * *)",
         nextRun: "Tomorrow at 9:00 AM",
-        tools: "lighthouse, email",
+        tools: "lighthouse",
         persona: "engineer"
     },
     {
@@ -19,7 +19,7 @@ const tasks = [
         linesGenerated: 134,
         schedule: "Weekly on Monday at 10:00 AM (0 10 * * 1)",
         nextRun: "Monday at 10:00 AM",
-        tools: "web-scraper, gpt-4",
+        tools: "web",
         persona: "product-manager"
     },
     {
@@ -28,7 +28,7 @@ const tasks = [
         linesGenerated: 156,
         schedule: "Daily at 6:00 PM (0 18 * * *)",
         nextRun: "Today at 6:00 PM",
-        tools: "zendesk, gpt-4, slack",
+        tools: "zendesk",
         persona: "product-manager"
     },
     {
@@ -37,7 +37,7 @@ const tasks = [
         linesGenerated: 118,
         schedule: "Daily at 11:00 AM (0 11 * * *)",
         nextRun: "Tomorrow at 11:00 AM",
-        tools: "web-scraper, notion",
+        tools: "web, google-sheets",
         persona: "product-manager"
     },
     {
@@ -46,7 +46,7 @@ const tasks = [
         linesGenerated: 103,
         schedule: "Weekly on Tuesday at 8:00 AM (0 8 * * 2)",
         nextRun: "Tuesday at 8:00 AM",
-        tools: "semrush, sheets, email",
+        tools: "web",
         persona: "marketing"
     },
     {
@@ -55,7 +55,7 @@ const tasks = [
         linesGenerated: 112,
         schedule: "Weekly on Wednesday at 2:00 PM (0 14 * * 3)",
         nextRun: "Wednesday at 2:00 PM",
-        tools: "notion, gpt-4, slack",
+        tools: "google-drive",
         persona: "product-manager"
     }
 ];
