@@ -10,25 +10,25 @@ const tasks = [
         linesGenerated: 87,
         schedule: "Daily at 8:00 AM (0 8 * * *)",
         nextRun: "Tomorrow at 8:00 AM",
-        tools: "postgres, slack",
+        tools: "postgres, email",
         persona: "product-manager"
     },
     {
-        instruction: "alert me when server response time exceeds 2 seconds...",
-        agentName: "perf-monitor",
-        linesGenerated: 64,
-        schedule: "Every 5 minutes (*/5 * * * *)",
-        nextRun: "In 5 minutes",
-        tools: "prometheus, pagerduty",
-        persona: "engineer"
+        instruction: "research competitors and summarize their pricing models...",
+        agentName: "competitor-intel",
+        linesGenerated: 134,
+        schedule: "Weekly on Monday at 10:00 AM (0 10 * * 1)",
+        nextRun: "Monday at 10:00 AM",
+        tools: "web-scraper, gpt-4",
+        persona: "product-manager"
     },
     {
-        instruction: "generate weekly user engagement report for the team...",
-        agentName: "engagement-report",
-        linesGenerated: 103,
-        schedule: "Weekly on Monday at 9:00 AM (0 9 * * 1)",
-        nextRun: "Monday at 9:00 AM",
-        tools: "mixpanel, sendgrid",
+        instruction: "analyze user feedback and categorize common issues...",
+        agentName: "feedback-analyzer",
+        linesGenerated: 156,
+        schedule: "Daily at 6:00 PM (0 18 * * *)",
+        nextRun: "Today at 6:00 PM",
+        tools: "zendesk, gpt-4, slack",
         persona: "product-manager"
     },
     {
@@ -41,21 +41,21 @@ const tasks = [
         persona: "engineer"
     },
     {
-        instruction: "notify team when error rate spikes above 1%...",
-        agentName: "error-alerter",
-        linesGenerated: 58,
-        schedule: "Every 10 minutes (*/10 * * * *)",
-        nextRun: "In 10 minutes",
-        tools: "sentry, slack",
+        instruction: "generate weekly performance benchmarks vs last quarter...",
+        agentName: "perf-benchmarks",
+        linesGenerated: 98,
+        schedule: "Weekly on Friday at 4:00 PM (0 16 * * 5)",
+        nextRun: "Friday at 4:00 PM",
+        tools: "datadog, excel, email",
         persona: "engineer"
     },
     {
-        instruction: "track feature adoption and send weekly updates...",
-        agentName: "adoption-tracker",
-        linesGenerated: 95,
-        schedule: "Weekly on Friday at 3:00 PM (0 15 * * 5)",
-        nextRun: "Friday at 3:00 PM",
-        tools: "analytics, email",
+        instruction: "summarize top feature requests from customer interviews...",
+        agentName: "feature-requests",
+        linesGenerated: 112,
+        schedule: "Weekly on Wednesday at 2:00 PM (0 14 * * 3)",
+        nextRun: "Wednesday at 2:00 PM",
+        tools: "notion, gpt-4, slack",
         persona: "product-manager"
     }
 ];
