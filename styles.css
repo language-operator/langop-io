@@ -117,7 +117,7 @@ body {
 @media (max-width: 768px) {
     .terminal {
         padding: 1rem;
-        padding-bottom: calc(1rem + env(safe-area-inset-bottom, 50px));
+        padding-bottom: calc(1rem + env(safe-area-inset-bottom, 80px));
     }
 
     .terminal-prompt {
@@ -129,7 +129,7 @@ body {
     }
 
     .terminal-content {
-        margin-bottom: 50px;
+        margin-bottom: 80px;
     }
 
     .github-icon {
