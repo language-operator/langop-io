@@ -5,76 +5,58 @@
 // Task examples
 const tasks = [
     {
-        instruction: "retrain product recommendation model when new data arrives...",
-        agentName: "model-retrainer",
-        linesGenerated: 234,
-        schedule: "Daily at 3:00 AM (0 3 * * *)",
-        nextRun: "Tomorrow at 3:00 AM",
-        tools: "mlflow, s3, kubernetes",
-        persona: "ml-engineer"
+        instruction: "send me a daily summary of customer signups and revenue...",
+        agentName: "daily-metrics",
+        linesGenerated: 87,
+        schedule: "Daily at 8:00 AM (0 8 * * *)",
+        nextRun: "Tomorrow at 8:00 AM",
+        tools: "postgres, slack",
+        persona: "product-manager"
     },
     {
-        instruction: "monitor model drift and alert if accuracy drops below 85%...",
-        agentName: "drift-detector",
-        linesGenerated: 189,
-        schedule: "Every hour (0 * * * *)",
-        nextRun: "In 1 hour",
-        tools: "prometheus, grafana, slack",
-        persona: "mlops-engineer"
-    },
-    {
-        instruction: "run hyperparameter tuning sweep for fraud detection model...",
-        agentName: "hyperparam-optimizer",
-        linesGenerated: 312,
-        schedule: "Weekly on Sunday at 1:00 AM (0 1 * * 0)",
-        nextRun: "Sunday at 1:00 AM",
-        tools: "optuna, wandb, ray",
-        persona: "ml-researcher"
-    },
-    {
-        instruction: "validate feature pipeline and check for data quality issues...",
-        agentName: "feature-validator",
-        linesGenerated: 156,
-        schedule: "Every 6 hours (0 */6 * * *)",
-        nextRun: "Today at 6:00 PM",
-        tools: "great-expectations, airflow",
-        persona: "data-engineer"
-    },
-    {
-        instruction: "auto-scale inference endpoints based on request volume...",
-        agentName: "inference-scaler",
-        linesGenerated: 203,
+        instruction: "alert me when server response time exceeds 2 seconds...",
+        agentName: "perf-monitor",
+        linesGenerated: 64,
         schedule: "Every 5 minutes (*/5 * * * *)",
         nextRun: "In 5 minutes",
-        tools: "kubernetes, prometheus, hpa",
-        persona: "mlops-engineer"
+        tools: "prometheus, pagerduty",
+        persona: "engineer"
     },
     {
-        instruction: "generate weekly model performance reports and email to team...",
-        agentName: "performance-reporter",
-        linesGenerated: 178,
+        instruction: "generate weekly user engagement report for the team...",
+        agentName: "engagement-report",
+        linesGenerated: 103,
         schedule: "Weekly on Monday at 9:00 AM (0 9 * * 1)",
         nextRun: "Monday at 9:00 AM",
-        tools: "mlflow, pandas, sendgrid",
-        persona: "ml-engineer"
+        tools: "mixpanel, sendgrid",
+        persona: "product-manager"
     },
     {
-        instruction: "archive old model artifacts and update model registry...",
-        agentName: "artifact-manager",
-        linesGenerated: 142,
-        schedule: "Weekly on Saturday at 2:00 AM (0 2 * * 6)",
-        nextRun: "Saturday at 2:00 AM",
-        tools: "mlflow, s3, model-registry",
-        persona: "mlops-engineer"
+        instruction: "backup production database and upload to S3...",
+        agentName: "db-backup",
+        linesGenerated: 72,
+        schedule: "Daily at 2:00 AM (0 2 * * *)",
+        nextRun: "Tomorrow at 2:00 AM",
+        tools: "postgres, s3",
+        persona: "engineer"
     },
     {
-        instruction: "run A/B tests on new model versions and analyze results...",
-        agentName: "ab-test-analyzer",
-        linesGenerated: 267,
-        schedule: "Daily at 11:00 PM (0 23 * * *)",
-        nextRun: "Today at 11:00 PM",
-        tools: "statsmodels, pandas, slack",
-        persona: "ml-engineer"
+        instruction: "notify team when error rate spikes above 1%...",
+        agentName: "error-alerter",
+        linesGenerated: 58,
+        schedule: "Every 10 minutes (*/10 * * * *)",
+        nextRun: "In 10 minutes",
+        tools: "sentry, slack",
+        persona: "engineer"
+    },
+    {
+        instruction: "track feature adoption and send weekly updates...",
+        agentName: "adoption-tracker",
+        linesGenerated: 95,
+        schedule: "Weekly on Friday at 3:00 PM (0 15 * * 5)",
+        nextRun: "Friday at 3:00 PM",
+        tools: "analytics, email",
+        persona: "product-manager"
     }
 ];
 
