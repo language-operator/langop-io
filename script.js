@@ -5,13 +5,13 @@
 // Task examples
 const tasks = [
     {
-        instruction: "send me a daily summary of customer signups and revenue...",
-        agentName: "daily-metrics",
-        linesGenerated: 87,
-        schedule: "Daily at 8:00 AM (0 8 * * *)",
-        nextRun: "Tomorrow at 8:00 AM",
-        tools: "postgres, email",
-        persona: "product-manager"
+        instruction: "compare our page speed with stripe, shopify, and square daily...",
+        agentName: "speed-benchmarks",
+        linesGenerated: 94,
+        schedule: "Daily at 9:00 AM (0 9 * * *)",
+        nextRun: "Tomorrow at 9:00 AM",
+        tools: "lighthouse, email",
+        persona: "engineer"
     },
     {
         instruction: "research competitors and summarize their pricing models...",
@@ -23,7 +23,7 @@ const tasks = [
         persona: "product-manager"
     },
     {
-        instruction: "analyze user feedback and categorize common issues...",
+        instruction: "analyze user feedback and categorize common pain points...",
         agentName: "feedback-analyzer",
         linesGenerated: 156,
         schedule: "Daily at 6:00 PM (0 18 * * *)",
@@ -32,22 +32,22 @@ const tasks = [
         persona: "product-manager"
     },
     {
-        instruction: "backup production database and upload to S3...",
-        agentName: "db-backup",
-        linesGenerated: 72,
-        schedule: "Daily at 2:00 AM (0 2 * * *)",
-        nextRun: "Tomorrow at 2:00 AM",
-        tools: "postgres, s3",
-        persona: "engineer"
+        instruction: "track competitors' feature launches and blog posts...",
+        agentName: "competitor-tracker",
+        linesGenerated: 118,
+        schedule: "Daily at 11:00 AM (0 11 * * *)",
+        nextRun: "Tomorrow at 11:00 AM",
+        tools: "web-scraper, notion",
+        persona: "product-manager"
     },
     {
-        instruction: "generate weekly performance benchmarks vs last quarter...",
-        agentName: "perf-benchmarks",
-        linesGenerated: 98,
-        schedule: "Weekly on Friday at 4:00 PM (0 16 * * 5)",
-        nextRun: "Friday at 4:00 PM",
-        tools: "datadog, excel, email",
-        persona: "engineer"
+        instruction: "compare our SEO rankings vs top 5 competitors for key terms...",
+        agentName: "seo-monitor",
+        linesGenerated: 103,
+        schedule: "Weekly on Tuesday at 8:00 AM (0 8 * * 2)",
+        nextRun: "Tuesday at 8:00 AM",
+        tools: "semrush, sheets, email",
+        persona: "marketing"
     },
     {
         instruction: "summarize top feature requests from customer interviews...",
